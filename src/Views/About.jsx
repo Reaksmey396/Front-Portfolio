@@ -1,5 +1,9 @@
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import goalImg from '/public/images/goal-image.jpg' // ឬ Import តាម Relative Path
+import img1 from '/public/images/my_image01.jpg'
+import img2 from '/public/images/my_image02.jpg'
+import img3 from '/public/images/my_image03.jpg'
 import {
   faArrowLeftLong,
   faArrowRightLong,
@@ -24,9 +28,9 @@ const education = [
 ]
 
 const photos = [
-  { src: '/images/my_image01.jpg', label: 'Portrait style' },
-  { src: '/images/my_image02.jpg', label: 'Formal photo' },
-  { src: '/images/my_image03.jpg', label: 'Personal photo' },
+  { src: img1, label: 'Portrait style' },
+  { src: img2, label: 'Formal photo' },
+  { src: img3, label: 'Personal photo' },
 ]
 
 const languages = [
@@ -72,13 +76,13 @@ const About = () => {
             <p className="mt-6 text-lg leading-8 text-[#5f6d68]">
               My name is Khim Reaksmey. I am 20 years old and student at RUPP. I am studying
               a major in Information Technology Engineering ( ITE ) in Year 3. I enjoy turning ideas into
-              clean, responsive, and useful web interfaces and applications. I am currently focused on front-end development with React, Tailwind CSS, and Bootstrap, while building practical backend foundations with PHP and Laravel. I can work with backend concepts, but I am still improving my confidence and skills in this area.
+              clean, responsive, and useful web interfaces and applications. I am currently focused on front-end development with React, Tailwind CSS, and Bootstrap, while also learning backend tools like PHP and Laravel to understand how full web systems work.
             </p>
             <p className="mt-5 text-lg leading-8 text-[#5f6d68]">
               I am the kind of student who learns by building. When I study a new technology,
               I would like to test it in a real layout, improve the design, and understand how each
               part works together. My main interest is front-end development because it combines
-              creativity, logic, and the experience people feel when they use a website. I want to become a full-stack developer in the future, so I practice backend tools to understand how data and interfaces connect in real web applications. My backend knowledge is still developing, and I am continuing to learn through projects.
+              creativity, logic, and the experience people feel when they use a website. And I want to become a Full-Stack Developer in the future, so I also practice backend tools to understand how data and interfaces connect in real web applications.
             </p>
           </div>
 
@@ -140,9 +144,8 @@ const About = () => {
             </h2>
             <p className="mt-5 leading-8 text-[#5f6d68]">
               I focus on frontend development first because I like the balance between design,
-              logic, and user experience. I also practice backend tools like PHP and Laravel so I
-              can learn how real web systems connect an interface to a database. I can follow and
-              build backend fundamentals, but I am still working toward stronger backend skills.
+              logic, and user experience. I also study backend tools like PHP and Laravel so I
+              can understand how real web systems connect from interface to database.
             </p>
             <p className="mt-4 leading-8 text-[#5f6d68]">
               During my 10 weeks front-end internship at ETEC Center, I practiced layout,
@@ -156,7 +159,7 @@ const About = () => {
           </article>
 
           <article className="rounded-lg bg-[#5f6361] p-4 text-white shadow-sm">
-            <img className='rounded-lg' src="/images/goal-image.jpg" alt="Current goal" />
+            <img className='rounded-lg' src={goalImg} alt="Current goal" />
             <h2 className="flex text-gray-300 mt-3 items-center gap-3 text-2xl font-bold">
               <FontAwesomeIcon icon={faBullseye} />
               Current goal
