@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faBriefcase, faCode, faLaptopCode, faWandMagicSparkles } from '@fortawesome/free-solid-svg-icons'
+import heroImage from '/public/images/portfolio-hero.png'
 
 const stats = [
   ['20', 'Years old'],
@@ -30,7 +31,7 @@ const Home = ({ onNavigate }) => {
         <div className="absolute inset-0">
           <img
             className="h-full w-full object-cover"
-            src="/images/portfolio-hero.png"
+            src={heroImage}
             alt="Modern coding workspace with laptop and notebook"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#f7f8f5] via-[#f7f8f5]/88 to-[#f7f8f5]/18" />
